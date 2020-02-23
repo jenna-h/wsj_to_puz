@@ -1,5 +1,5 @@
 # WSJ -> .puz
-I wanted to be collaborate with other people on the [Wall Street Journal's Friday Crossword Contests](https://blogs.wsj.com/puzzle/category/crossword-contest/).
+I wanted to collaborate with other people on the [Wall Street Journal's Friday Crossword Contests](https://blogs.wsj.com/puzzle/category/crossword-contest/).
 
 [Down For Across](https://downforacross.com) is a wonderful website which allows people to work on crosswords together in real time! It also has a wonderful feature which allows people to upload .puz files.
 
