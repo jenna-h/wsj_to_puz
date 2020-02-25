@@ -56,6 +56,8 @@ def visit_wsj_crossword(link):
     f.write('''<NOTEPAD>
 This .puz file was written by Jenna Himawan.''')
 
+    driver.close()
+
 def parse_clue_element_text(element_text):
     clues = []
     across_clues_and_numbers = element_text.split('\n')

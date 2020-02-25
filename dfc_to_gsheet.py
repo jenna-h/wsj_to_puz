@@ -35,6 +35,9 @@ def dfc_to_gsheet(link):
             else:
                 row_text.append(letters_only(td.text))
         text += '\t'.join(row_text) + '\n'
+
+    driver.close()
+    
     return text
 
 def letters_only(text):
