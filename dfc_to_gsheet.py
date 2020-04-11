@@ -1,7 +1,6 @@
 from selenium import webdriver
+import argparse
 import time
-
-PUZZLE = # PUT A LINK TO THE DOWN FOR ACROSS PUZZLE HERE
 
 # what character do we use to signify a black square?
 BLACK_CHARACTER = '-'
@@ -47,4 +46,10 @@ def letters_only(text):
             letters += char
     return letters
 
-print(dfc_to_gsheet(PUZZLE))
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description='Move a DownForAcross crossword puzzle to a Google Sheet')
+    parser.add_argument('url', type=str, nargs=1,
+                        help='the URL to the DownForAcross puzzle')
+    args = parser.parse_args()
+    print(dfc_to_gsheet(args.url[0]))
