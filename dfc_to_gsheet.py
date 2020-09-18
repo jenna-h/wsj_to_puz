@@ -1,6 +1,9 @@
-from selenium import webdriver
 import argparse
 import time
+import pyperclip
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 # what character do we use to signify a black square?
 BLACK_CHARACTER = '-'
@@ -11,7 +14,10 @@ BLANK_CHARACTER = ' '
 # how long should we wait for page load?
 WAIT_TIME = 2
 
-driver = webdriver.Chrome('/usr/local/bin/chromedriver')
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+
+driver = webdriver.Chrome('/usr/local/bin/chromedriver', options = chrome_options)
 
 def dfc_to_gsheet(link):
     driver.get(link)
@@ -52,4 +58,4 @@ if __name__ == '__main__':
     parser.add_argument('url', type=str, nargs=1,
                         help='the URL to the DownForAcross puzzle')
     args = parser.parse_args()
-    print(dfc_to_gsheet(args.url[0]))
+    pyperclip.copy(dfc_to_gsheet(args.url[0]))

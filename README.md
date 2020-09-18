@@ -19,7 +19,7 @@ All right, so you've just filled out the entirety of your crossword. BUT HOW DO 
 
 I like using Google Sheets to solve puzzles, and I've been copying over the WSJ crosswords  after solving them. I've spent time learning how to deal with crossword websites already. At this point, I might as well make a script to help transcribe crosswords on Down For Across.
 
-Providing a link to a Down For Across puzzle and running the script prints out a tab-separated (copy-pasteable!) version of the crossword. Black squares and unfilled squares are designated by characters of your choosing. Conditional formatting will be your friend.
+Providing a link to a Down For Across puzzle and running the script copies a tab-separated (copy-pasteable!) version of the crossword to your clipboard. Black squares and unfilled squares are designated by characters of your choosing. Conditional formatting will be your friend.
 
 Usage is as follows:
 ```
